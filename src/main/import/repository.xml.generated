@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <formationkmk j:dependencies="default"
+                    j:modulePriority="0"
+                    j:moduleType="module"
+                    j:title="formationkmk"
+                    jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                    jcr:primaryType="jnt:module">
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-formationkmk-1.0-SNAPSHOT">
+                    <src jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                 jcr:primaryType="jnt:folder">
+                        <main jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                     jcr:primaryType="jnt:folder">
+                            <resources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                             jcr:primaryType="jnt:folder">
+                                <dab_article jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                  jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                                        <article.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </dab_article>
+                                <META-INF jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                               jcr:primaryType="jnt:metaInfFolder">
+                                    <formationkmk.tld jcr:primaryType="jnt:editableFile"/>
+                                </META-INF>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                </templates>
+                
+            </formationkmk>
+    </modules>
+</content>

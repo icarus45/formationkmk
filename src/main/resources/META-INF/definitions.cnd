@@ -1,0 +1,18 @@
+<dab = 'www.tuto.com/jahia/1.0/'>
+<dmix = 'www.tuto.com/jahia/mixin/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+
+[dmix:mixinTuto] > jmix:droppableContent mixin
+
+[dmix:ComposantAlaUne] mixin
+
+[dab:article] > jnt:content, dmix:mixinTuto, dmix:ComposantAlaUne
+ - titre (string) mandatory internationalized scoreboost=5.0
+ - chapo (string, richtext) internationalized
+ - corps (string, richtext) internationalized
+ - force (long, choicelist) = '0' < '0','1','2','3','4'
+ - visuel (weakreference, picker[type='image'])
+
+
+
